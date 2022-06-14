@@ -1,4 +1,4 @@
-<!--?php
+<?php
 session_start();
 require('root/db.php');
 if(isset($_POST["login"]) && !empty($_POST["username"]) && !empty($_POST["password"]))  
@@ -47,7 +47,7 @@ if(isset($_POST["login"]) && !empty($_POST["username"]) && !empty($_POST["passwo
 				}
 		}
 	}
-?-->
+?>
 
 <!DOCTYPE html>
 <html>
@@ -87,9 +87,9 @@ if(isset($_POST["login"]) && !empty($_POST["username"]) && !empty($_POST["passwo
       <input type="submit" name="login" class="fadeIn_fourth" value="Log In">
 	  
 	  
-	<!--?php if (! empty($message)) { ?>
+	<?php if (! empty($message)) { ?>
     <p class="errorMessage"><?php echo $message; ?></p>
-	<?php } ?-->
+	<?php } ?>
     </form>
 
     <!-- Remind Passowrd -->
